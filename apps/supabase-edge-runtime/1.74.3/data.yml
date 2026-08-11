@@ -1,0 +1,30 @@
+# 意图（2026-08-11）：响应用户原始需求“创建一个 SuperBaseEdgeRuntime 的 1Panel app”。
+# 约束：暴露网络配置及可选的 Supabase 服务端连接凭据。
+additionalProperties:
+  formFields:
+    - default: 9000
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ""
+      envKey: SUPABASE_URL
+      labelEn: Supabase Internal URL
+      labelZh: Supabase 内部地址
+      required: false
+      type: text
+    - default: ""
+      envKey: SUPABASE_ANON_KEY
+      labelEn: Supabase Publishable / Anon Key
+      labelZh: Supabase Publishable / Anon 密钥
+      required: false
+      type: password
+    - default: ""
+      envKey: SUPABASE_SERVICE_ROLE_KEY
+      labelEn: Supabase Service Role Key
+      labelZh: Supabase 服务角色密钥
+      required: false
+      type: password

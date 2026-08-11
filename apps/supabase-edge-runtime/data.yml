@@ -1,0 +1,30 @@
+# 意图（2026-08-11）：响应用户原始需求“创建一个 SuperBaseEdgeRuntime 的 1Panel app”。
+# 约束：定义 Supabase Edge Runtime 的跨版本展示元数据。
+name: Supabase Edge Runtime
+tags:
+  - 运行环境
+  - 开发工具
+title: 自托管 Supabase Edge Functions 的 Deno 运行时
+description: Supabase Edge Runtime 是基于 Deno 的 Web 服务器，可运行 TypeScript、JavaScript 和 WASM Edge Functions。
+additionalProperties:
+  key: supabase-edge-runtime
+  name: Supabase Edge Runtime
+  tags:
+    - Runtime
+    - DevTool
+  shortDescZh: 自托管 Supabase Edge Functions 的 Deno 运行时
+  shortDescEn: A Deno runtime for self-hosted Supabase Edge Functions.
+  description:
+    zh: Supabase Edge Runtime 是由 Supabase 维护的 Deno Web 服务器，用于自托管 TypeScript、JavaScript 和 WASM Edge Functions。
+    en: Supabase Edge Runtime is a Deno web server maintained by Supabase for self-hosting TypeScript, JavaScript, and WASM Edge Functions.
+    zh-Hant: Supabase Edge Runtime 是由 Supabase 維護的 Deno 網頁伺服器，用於自託管 TypeScript、JavaScript 和 WASM Edge Functions。
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://supabase.com/docs/guides/functions
+  github: https://github.com/supabase/edge-runtime
+  document: https://supabase.com/docs/guides/functions
+  architectures:
+    - amd64
+    - arm64

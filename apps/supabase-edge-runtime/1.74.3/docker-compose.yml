@@ -1,0 +1,28 @@
+# 意图（2026-08-11）：响应用户原始需求“创建一个 SuperBaseEdgeRuntime 的 1Panel app”。
+# 约束：固定运行用户指定的 v1.74.3 镜像，并挂载可编辑函数入口。
+services:
+  supabase-edge-runtime:
+    image: ghcr.io/supabase/edge-runtime:v1.74.3
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:9000"
+    volumes:
+      - ./data/functions:/home/deno/functions
+      - ./data/cache:/root/.cache/deno
+    environment:
+      SUPABASE_URL: ${SUPABASE_URL:-}
+      SUPABASE_ANON_KEY: ${SUPABASE_ANON_KEY:-}
+      SUPABASE_SERVICE_ROLE_KEY: ${SUPABASE_SERVICE_ROLE_KEY:-}
+    command:
+      - start
+      - --main-service
+      - /home/deno/functions/main
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
