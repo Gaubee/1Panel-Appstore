@@ -1,0 +1,20 @@
+services:
+  gaubeeos:
+    image: ghcr.io/gaubee/gaubee.com:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:80
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost/pages"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true
