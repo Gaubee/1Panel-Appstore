@@ -89,6 +89,12 @@ The scripts in `update/` may perform network requests and `git pull`. Do not run
 them casually while making focused app edits. If using them, inspect the script
 and current worktree first.
 
+## Delivery Workflow
+
+Once a new app package passes `validate-app.sh`, commit it as
+`feat: add <app-key> app` and push to `origin main` without waiting for a
+separate request (user rule, 2026-08-14).
+
 ## Editing Notes
 
 - Preserve existing YAML indentation style within the file being edited.
