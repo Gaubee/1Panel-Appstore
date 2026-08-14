@@ -1,0 +1,31 @@
+name: OwebGame
+tags:
+    - 休闲游戏
+title: 中文 DOS 游戏在线游玩平台，浏览器实时运行 DOSBox，附 Go 管理后台
+description: OwebGame 是 game.oweb.xin 的自托管版本：浏览器内实时运行中文 DOS 游戏（emularity + DOSBox），PWA 离线可玩，本地游戏库支持断点续传，并内置游戏管理、封面上传、镜像池管理与一键发布的 Go 管理后台
+additionalProperties:
+  key: oweb-game
+  name: OwebGame
+  tags:
+    - Game
+  shortDescZh: 中文 DOS 游戏在线游玩平台，浏览器实时运行 DOSBox，附管理后台
+  shortDescEn: Online Chinese DOS games platform running DOSBox in the browser, with admin CMS
+  description:
+    en: Self-hosted game.oweb.xin. Play classic Chinese DOS games in real time in the browser (emularity + DOSBox), PWA offline support, local game library with resumable downloads, plus a Go admin backend for game CRUD, cover uploads, mirror pool management and one-click publishing
+    ja: game.oweb.xin のセルフホスト版。ブラウザ上で中国語 DOS ゲームをリアルタイムに実行（emularity + DOSBox）し、PWA オフライン、レジューム対応のローカルゲームライブラリを備え、ゲーム管理・表紙アップロード・ミラープール管理・ワンクリック公開の Go 管理バックエンドを内蔵します
+    ms: Versi swa-hos game.oweb.xin. Mainkan permainan DOS klasik Cina secara masa nyata dalam pelayar (emularity + DOSBox), sokongan luar talian PWA, pustaka permainan tempatan dengan muat turun boleh sambung semula, serta bahagian pentadbiran Go untuk CRUD permainan, muat naik muka depan, pengurusan kolam cermin dan penerbitan sekali klik
+    pt-br: Versão auto-hospedada do game.oweb.xin. Jogue jogos DOS chineses clássicos em tempo real no navegador (emularity + DOSBox), com suporte offline PWA, biblioteca local de jogos com downloads retomáveis e um backend administrativo em Go para CRUD de jogos, upload de capas, gestão de pool de espelhos e publicação em um clique
+    ru: Самостоятельно размещаемая версия game.oweb.xin. Играйте в классические китайские DOS-игры прямо в браузере (emularity + DOSBox), поддержка офлайна PWA, локальная библиотека игр с докачкой, а также административный бэкенд на Go для управления играми, загрузки обложек, управления пулом зеркал и публикации в один клик
+    ko: game.oweb.xin의 셀프 호스팅 버전입니다. 브라우저에서 중국어 DOS 게임을 실시간으로 실행하고(emularity + DOSBox), PWA 오프라인을 지원하며, 이어받기 가능한 로컬 게임 라이브러리와 게임 관리·표지 업로드·미러 풀 관리·원클릭 게시를 위한 Go 관리 백엔드를 내장합니다
+    zh-Hant: game.oweb.xin 的自架版本：瀏覽器內即時執行中文 DOS 遊戲（emularity + DOSBox），PWA 離線可玩，本地遊戲庫支援斷點續傳，並內建遊戲管理、封面上傳、鏡像池管理與一鍵發佈的 Go 管理後台
+    zh: game.oweb.xin 的自托管版本：浏览器内实时运行中文 DOS 游戏（emularity + DOSBox），PWA 离线可玩，本地游戏库支持断点续传，并内置游戏管理、封面上传、镜像池管理与一键发布的 Go 管理后台
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://game.oweb.xin
+  github: https://github.com/gaubee/game.oweb.xin
+  document: https://github.com/gaubee/game.oweb.xin
+  architectures:
+    - amd64
+    - arm64

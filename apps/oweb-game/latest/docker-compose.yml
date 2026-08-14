@@ -1,0 +1,24 @@
+services:
+  oweb-game:
+    image: ghcr.io/gaubee/game.oweb.xin:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:7780
+    environment:
+      - ADMIN_ADDR=:7780
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - ADMIN_SECRET=${ADMIN_SECRET:-}
+      - DATA_DIR=/app/frontend/public
+      - ADMIN_DIST=/app/admin/dist
+      - PUBLISH_HOOK=${PUBLISH_HOOK:-}
+    volumes:
+      - ./data/public:/app/frontend/public
+      - ./data/dist:/app/frontend/dist
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true

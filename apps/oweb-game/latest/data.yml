@@ -1,0 +1,66 @@
+additionalProperties:
+    formFields:
+        - default: 7780
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: Port
+          labelZh: 端口
+          required: true
+          rule: paramPort
+          type: number
+          label:
+            en: Port
+            ja: ポート
+            ms: Port
+            pt-br: Porta
+            ru: Порт
+            ko: 포트
+            zh-Hant: 埠
+            zh: 端口
+        - edit: true
+          envKey: ADMIN_PASSWORD
+          labelEn: Admin Password
+          labelZh: 管理密码
+          required: true
+          type: password
+          label:
+            en: Admin Password
+            ja: 管理パスワード
+            ms: Kata Laluan Pentadbir
+            pt-br: Senha do Administrador
+            ru: Пароль администратора
+            ko: 관리자 비밀번호
+            zh-Hant: 管理密碼
+            zh: 管理密码
+        - default: ""
+          edit: true
+          envKey: ADMIN_SECRET
+          labelEn: Session Secret
+          labelZh: 会话签名密钥
+          required: false
+          type: password
+          label:
+            en: Session Secret (empty = random per restart)
+            ja: セッションシークレット（空欄なら再起動ごとにランダム）
+            ms: Rahsia Sesi (kosong = rawak setiap mula semula)
+            pt-br: Segredo de sessão (vazio = aleatório a cada reinício)
+            ru: Секрет сессии (пусто = случайный при каждом перезапуске)
+            ko: 세션 시크릿 (비워두면 재시작마다 무작위)
+            zh-Hant: 會話簽名密鑰（留空則每次重啟隨機生成）
+            zh: 会话签名密钥（留空则每次重启随机生成）
+        - default: ""
+          edit: true
+          envKey: PUBLISH_HOOK
+          labelEn: Publish Hook
+          labelZh: 发布钩子脚本
+          required: false
+          type: text
+          label:
+            en: Publish Hook (optional shell command run after publishing)
+            ja: 公開フック（公開後に実行する任意のシェルコマンド）
+            ms: Publish Hook (arahan shell pilihan dilaksana selepas penerbitan)
+            pt-br: Publish Hook (comando shell opcional executado após publicar)
+            ru: Publish Hook (необязательная shell-команда после публикации)
+            ko: 게시 훅(게시 후 실행되는 선택적 셸 명령)
+            zh-Hant: 發佈鉤子（發佈後執行的可選 shell 命令）
+            zh: 发布钩子（发布后执行的可选 shell 命令）
