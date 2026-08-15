@@ -3,7 +3,7 @@ tags:
     - 建站
     - 实用工具
 title: 浏览器中的桌面操作系统式个人主页，内置终端、编辑器与 Git 客户端
-description: GaubeeOS 是 gaubee.com 的自托管镜像，一个运行在浏览器中的“桌面操作系统”式个人主页：虚拟文件系统、终端、代码编辑器、Git 客户端、Markdown 博客与全文搜索，纯静态构建、nginx 托管、开箱即用
+description: GaubeeOS 是 gaubee.com 的自托管镜像，一个运行在浏览器中的“桌面操作系统”式个人主页：虚拟文件系统、终端、代码编辑器、Git 客户端、Markdown 博客与全文搜索，纯静态构建、自研 Rust 静态服务器托管、开箱即用
 additionalProperties:
   key: gaubeeos
   name: GaubeeOS
@@ -13,13 +13,13 @@ additionalProperties:
   shortDescZh: 浏览器中的桌面操作系统式个人主页，内置终端、编辑器与 Git 客户端
   shortDescEn: Desktop-OS style personal homepage in the browser with terminal, editor and git client
   description:
-    en: Self-hosted mirror of gaubee.com, a desktop-OS style personal homepage running fully in the browser. Ships a virtual filesystem, terminal, code editor, git client, markdown blog and full-text search, built as a static site served by nginx
-    ja: gaubee.com のセルフホストミラー。ブラウザ上で動くデスクトップOS風の個人サイトで、仮想ファイルシステム、ターミナル、コードエディタ、Git クライアント、Markdown ブログ、全文検索を備え、nginx で配信される静的サイトとして構築されています
-    ms: Cermin swa-hos gaubee.com, laman peribadi bergaya OS desktop yang berjalan sepenuhnya dalam pelayar. Dilengkapi sistem fail maya, terminal, editor kod, klien git, blog markdown dan carian teks penuh, dibina sebagai laman statik yang dilayan oleh nginx
-    pt-br: Espelho auto-hospedado do gaubee.com, uma página pessoal estilo sistema operacional desktop que roda inteiramente no navegador. Inclui sistema de arquivos virtual, terminal, editor de código, cliente git, blog em markdown e busca full-text, entregue como site estático via nginx
-    ru: Самостоятельно размещённое зеркало gaubee.com — персональный сайт в стиле настольной ОС, полностью работающий в браузере. Включает виртуальную файловую систему, терминал, редактор кода, git-клиент, markdown-блог и полнотекстовый поиск; статический сайт на nginx
-    ko: 브라우저에서 완전히 동작하는 데스크톱 OS 스타일 개인 홈페이지인 gaubee.com의 셀프 호스팅 미러입니다. 가상 파일 시스템, 터미널, 코드 에디터, git 클라이언트, 마크다운 블로그와 전문 검색을 갖추고 있으며 nginx가 서빙하는 정적 사이트로 빌드됩니다
-    zh-Hant: gaubee.com 的自架映像，一個運行在瀏覽器中的「桌面作業系統」式個人網站：虛擬檔案系統、終端機、程式碼編輯器、Git 客戶端、Markdown 部落格與全文搜尋，以純靜態方式構建並由 nginx 託管
+    en: Self-hosted mirror of gaubee.com, a desktop-OS style personal homepage running fully in the browser. Ships a virtual filesystem, terminal, code editor, git client, markdown blog and full-text search, built as a static site served by a self-built Rust static server
+    ja: gaubee.com のセルフホストミラー。ブラウザ上で動くデスクトップOS風の個人サイトで、仮想ファイルシステム、ターミナル、コードエディタ、Git クライアント、Markdown ブログ、全文検索を備え、自作の Rust 静的サーバーで配信される静的サイトとして構築されています
+    ms: Cermin swa-hos gaubee.com, laman peribadi bergaya OS desktop yang berjalan sepenuhnya dalam pelayar. Dilengkapi sistem fail maya, terminal, editor kod, klien git, blog markdown dan carian teks penuh, dibina sebagai laman statik yang dilayan oleh pelayan statik Rust buatan sendiri
+    pt-br: Espelho auto-hospedado do gaubee.com, uma página pessoal estilo sistema operacional desktop que roda inteiramente no navegador. Inclui sistema de arquivos virtual, terminal, editor de código, cliente git, blog em markdown e busca full-text, entregue como site estático via servidor estático próprio em Rust
+    ru: Самостоятельно размещённое зеркало gaubee.com — персональный сайт в стиле настольной ОС, полностью работающий в браузере. Включает виртуальную файловую систему, терминал, редактор кода, git-клиент, markdown-блог и полнотекстовый поиск; статический сайт на собственном статическом сервере (Rust)
+    ko: 브라우저에서 완전히 동작하는 데스크톱 OS 스타일 개인 홈페이지인 gaubee.com의 셀프 호스팅 미러입니다. 가상 파일 시스템, 터미널, 코드 에디터, git 클라이언트, 마크다운 블로그와 전문 검색을 갖추고 있으며 자체 제작한 Rust 정적 서버가 서빙하는 정적 사이트로 빌드됩니다
+    zh-Hant: gaubee.com 的自架映像，一個運行在瀏覽器中的「桌面作業系統」式個人網站：虛擬檔案系統、終端機、程式碼編輯器、Git 客戶端、Markdown 部落格與全文搜尋，以純靜態方式構建並由自研 Rust 靜態伺服器託管
     zh: gaubee.com 的自托管镜像，一个运行在浏览器中的“桌面操作系统”式个人主页：虚拟文件系统、终端、代码编辑器、Git 客户端、Markdown 博客与全文搜索，以纯静态方式构建并由 nginx 托管
   type: website
   crossVersionUpdate: true

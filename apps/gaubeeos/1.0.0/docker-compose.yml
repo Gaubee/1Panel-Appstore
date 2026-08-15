@@ -1,0 +1,20 @@
+# v1.0.0（2026-08-15）：运行时 nginx → Rust 静态服务器（scratch 镜像）。
+# - 容器内监听端口 80 → 8080（非 root 进程无法绑定 80）
+# - 移除 exec 型 healthcheck（scratch 无 shell/wget）；探活用 GET /healthz
+# - 例外说明：本应用为滚动发布模型（站点内容随上游 CI 持续打进同一 latest tag，
+#   用户侧靠 docker compose pull 滚动更新），故版本目录也使用 latest 镜像 tag，
+#   版本号仅标记「运行时契约」变更（端口/探活方式等），不对应镜像内容版本。
+services:
+  gaubeeos:
+    image: ghcr.io/gaubee/gaubee.com:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:8080
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true
