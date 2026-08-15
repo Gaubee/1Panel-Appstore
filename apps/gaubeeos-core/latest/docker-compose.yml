@@ -1,0 +1,20 @@
+services:
+  gaubeeos:
+    image: docker.io/gaubee/gaubeeos:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:8080
+    volumes:
+      # 订阅配置 + 内容缓存 + 聚合清单（有状态核心，升级不丢）
+      - ./data:/data
+    environment:
+      # 可选：提升订阅同步 API 限额（匿名 60/h → 5000/h）
+      - GITHUB_TOKEN=${GITHUB_TOKEN:-}
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true

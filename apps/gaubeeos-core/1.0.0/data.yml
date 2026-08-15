@@ -1,0 +1,35 @@
+additionalProperties:
+    formFields:
+        - default: 8090
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: Port
+          labelZh: 端口
+          required: true
+          rule: paramPort
+          type: number
+          label:
+            en: Port
+            ja: ポート
+            ms: Port
+            pt-br: Porta
+            ru: Порт
+            ko: 포트
+            zh-Hant: 埠
+            zh: 端口
+        - default: ""
+          edit: true
+          envKey: GITHUB_TOKEN
+          labelEn: GitHub Token (optional)
+          labelZh: GitHub Token（可选）
+          required: false
+          type: password
+          label:
+            en: GitHub Token (optional)
+            ja: GitHub トークン（任意）
+            ms: Token GitHub (pilihan)
+            pt-br: Token GitHub (opcional)
+            ru: GitHub Token (опционально)
+            ko: GitHub 토큰 (선택)
+            zh-Hant: GitHub Token（可選）
+            zh: GitHub Token（可选）

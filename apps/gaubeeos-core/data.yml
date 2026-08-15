@@ -1,0 +1,32 @@
+name: GaubeeOS 内核
+tags:
+    - 建站
+    - 实用工具
+title: 桌面 OS 式站点内核：订阅 GitHub 仓库作为内容源，自部署即拥有自己的站点
+description: GaubeeOS 内核是一个可自部署的「桌面操作系统」式站点：内置 Rust 订阅引擎（GitHub 仓库 → 定时同步 → 本地缓存）、应用系统、终端、代码编辑器、Git 客户端与全文搜索；不内置任何内容，安装后在设置中订阅任意 GitHub markdown 仓库即可。与「GaubeeOS」（博主单体镜像）不同，本应用是通用内核，面向任何人部署
+additionalProperties:
+  key: gaubeeos-core
+  name: GaubeeOS Core
+  tags:
+    - Website
+    - Tool
+  shortDescZh: 桌面 OS 式站点内核，订阅 GitHub 仓库作为内容源
+  shortDescEn: Desktop-OS style site kernel powered by GitHub content subscriptions
+  description:
+    en: A self-deployable desktop-OS style site. Ships a Rust subscription engine (GitHub repos → scheduled sync → local cache), app system, terminal, code editor, git client and full-text search. No bundled content — subscribe to any GitHub markdown repo in settings to make it yours.
+    ja: セルフデプロイ可能なデスクトップOS風サイト。Rust 製サブスクリプションエンジン（GitHub リポジトリ → 定期同期 → ローカルキャッシュ）、アプリシステム、ターミナル、コードエディター、Git クライアント、全文検索を内蔵。コンテンツは同梱されず、設定で任意の GitHub マークダウンリポジトリを購読します。
+    ms: Laman bergaya OS desktop yang boleh di-deploy sendiri. Enjin langganan Rust (repo GitHub → sync berjadwal → cache tempatan), sistem aplikasi, terminal, editor kod, klien git dan carian teks penuh. Langgan mana-mana repo markdown GitHub dalam tetapan.
+    pt-br: Site estilo sistema operacional desktop auto-hospedável. Motor de assinaturas em Rust (repos GitHub → sincronização agendada → cache local), sistema de apps, terminal, editor de código, cliente git e busca full-text. Assine qualquer repositório markdown do GitHub nas configurações.
+    ru: Саморазвёртываемый сайт в стиле настольной ОС. Движок подписок на Rust (репозитории GitHub → синхронизация по расписанию → локальный кэш), система приложений, терминал, редактор кода, git-клиент и полнотекстовый поиск. Подпишитесь на любой markdown-репозиторий GitHub в настройках.
+    ko: 자체 배포 가능한 데스크톱 OS 스타일 사이트. Rust 구독 엔진(GitHub 저장소 → 예약 동기화 → 로컬 캐시), 앱 시스템, 터미널, 코드 에디터, git 클라이언트, 전문 검색 내장. 설정에서 원하는 GitHub 마크다운 저장소를 구독하세요.
+    zh-Hant: 可自架的「桌面作業系統」式網站。內建 Rust 訂閱引擎（GitHub 儲存庫 → 定時同步 → 本地快取）、應用系統、終端機、程式碼編輯器、Git 用戶端與全文搜尋；在設定中訂閱任意 GitHub markdown 儲存庫即可。
+    zh: 可自部署的「桌面操作系统」式网站。内置 Rust 订阅引擎（GitHub 仓库 → 定时同步 → 本地缓存）、应用系统、终端、代码编辑器、Git 客户端与全文搜索；在设置中订阅任意 GitHub markdown 仓库即可拥有自己的网站。
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/Gaubee/gaubeeos
+  github: https://github.com/Gaubee/gaubeeos
+  document: https://github.com/Gaubee/gaubeeos#readme
+  architectures:
+    - amd64
