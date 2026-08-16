@@ -16,5 +16,9 @@
 # Codex
 .codex
 
+# Cache
+.cache/
+tmp/
+
 # superpowers
 /docs
